@@ -1,0 +1,45 @@
+{
+  "name": "roshangara/cache-functions",
+  "description": "package for request to another server",
+  "homepage": "https://github.com/roshangara/cache-functions",
+  "keywords": [
+    "laravel",
+    "lumen",
+    "roshangara",
+    "cache-functions"
+  ],
+  "support": {
+    "issues": "https://github.com/roshangara/cache-functions/issues",
+    "source": "https://github.com/roshangara/cache-functions"
+  },
+  "require": {
+    "php": ">=7.0",
+    "illuminate/support": "^5.0",
+    "illuminate/database": "^5.0",
+    "roshangara/parser": "dev-master",
+    "ext-soap": "*",
+    "ext-curl": "*",
+    "ext-iconv": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Roshangara\\CacheFunctions\\": "src"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Roshangara\\CacheFunctions\\WebserviceServiceProvider"
+      ]
+    }
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Mohammad Taghikhani",
+      "email": "mroshangara@gmail.com",
+      "homepage": "http://roshangara.ir"
+    }
+  ],
+  "minimum-stability": "dev"
+}
