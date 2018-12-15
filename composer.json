@@ -26,13 +26,6 @@
       "Roshangara\\CacheFunctions\\": "src"
     }
   },
-  "extra": {
-    "laravel": {
-      "providers": [
-        "Roshangara\\CacheFunctions\\WebserviceServiceProvider"
-      ]
-    }
-  },
   "license": "MIT",
   "authors": [
     {
