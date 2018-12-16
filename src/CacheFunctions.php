@@ -32,7 +32,9 @@ trait CacheFunctions
 			$result = call_user_func_array([$this, substr($method, 1)], $arguments);
 
 			// cache function result
-			$this->cacheFunctionResult($method, $cacheId, $result);
+			if ($result) {
+				$this->cacheFunctionResult($method, $cacheId, $result);
+			}
 
 			return $result;
 		}
